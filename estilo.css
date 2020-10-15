@@ -1,24 +1,14 @@
-body {
-  margin: 0;
-  background-color: #6fd5a0;
+body{
+    
+    font-family: Calibri;
+    padding: 10px 20px;
 }
+
 h1 {
-  margin: 0;
-  color: #f5f5dc;
-  font-family: "Kanit", sans-serif;
+	color: #FFFFFF;
+	background-color: #ffbd33;
+	padding: 10px;
+	border-radius:0 20px;
 }
-.contenido1 {
-  background-color: #6fd5a0;
-  padding: 3%;
-}
-.contenido1 p {
-  font-family: monospace;
-  font-size: 20px;
-  text-align: center;
-  margin: 35px 0px;
-}
-.contenido1 h2 {
-  font-family: monospace;
-  text-align: center;
-  color: #191970;
-}
+
+
