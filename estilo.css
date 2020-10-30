@@ -170,7 +170,6 @@ input {
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1740px) {
   .NavBar div a {
-    background-color: orange;
     margin: 15px;
     font-size: 1.1rem;
   }
