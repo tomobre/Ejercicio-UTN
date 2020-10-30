@@ -1,14 +1,185 @@
-body{
-    
-    font-family: Calibri;
-    padding: 10px 20px;
+html {
+  font-family: "Trispace", sans-serif;
+  line-height: 3rem;
+  scroll-behavior: smooth;
 }
 
-h1 {
-	color: #FFFFFF;
-	background-color: #ffbd33;
-	padding: 10px;
-	border-radius:0 20px;
+.Contenido {
+  margin-left: 3rem;
+  margin-right: 5rem;
 }
 
+.NavBar {
+  position: sticky;
+  display: flex;
+  background-color: lightblue;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 
+#nombre {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.NavBar div a {
+  margin: 4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.NavBar div {
+  align-self: flex-end;
+}
+
+.NavBar div a:hover {
+  font-size: 1.7rem;
+}
+
+#ScrollTop {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1vh;
+  right: 1vh;
+  background-color: lightblue;
+  border-color: none;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.tituloGen {
+  font-size: 2rem;
+}
+
+th {
+  text-align: left;
+}
+
+#BotCheckRom,
+#BotCheckPal {
+  background-color: lightblue;
+  border-color: none;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#BotCheckRom:hover {
+  background-color: rgb(129, 188, 208);
+  cursor: pointer;
+}
+
+#BotCheckPal:hover {
+  background-color: rgb(129, 188, 208);
+  cursor: pointer;
+}
+
+#contact {
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  margin: 0 auto;
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  font-size: 2rem;
+  height: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.LinkedInsta {
+  display: flex;
+  justify-content: space-around;
+  filter: saturate(3);
+}
+#Instagram {
+  weight: 5rem;
+  height: 5rem;
+}
+
+#Linkedin {
+  weight: 4.5rem;
+  height: 4.5rem;
+}
+
+#submit {
+  background-color: lightblue;
+  border-color: none;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1rem;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#submit:hover {
+  background-color: rgb(129, 188, 208);
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 769px) {
+  .NavBar div a {
+    margin: 15px;
+    font-size: 1rem;
+  }
+  .NavBar div a:hover {
+    font-size: 1.1rem;
+  }
+
+  .Contenido {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #contact {
+    padding: 2rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  input {
+    font-size: 2rem;
+    height: 50px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  #nombre {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1740px) {
+  .NavBar div a {
+    background-color: orange;
+    margin: 15px;
+    font-size: 1.1rem;
+  }
+  #contact {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .NavBar div a:hover {
+    font-size: 1.2rem;
+  }
+}
