@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Evaluación Integradora</title>
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<nav class="NavBar">
+
+		<h1 id="nombre">Tomas <br>
+			Obregon</h1>
+		<div>
+			<a href="./index.html">Home</a>
+			<a href="./numeros_romanos.html">Numeros Romanos</a>
+			<a href="./detector_palindromos.html">Detector de Palindromos</a>
+			<a href="./contacto.html">Contacto</a>
+		</div>
+	</nav>
+
+	<script>
+		function iniciar() {
+			nombre1 = document.getElementById("ConNombre");
+			nombre2 = document.getElementById("ConApellido");
+			submit = document.getElementById("submit");
+			submit.addEventListener("click", validacion, false);
+
+
+		}
+		function validacion() {
+			if (nombre1.value === "" && nombre2.value === "") {
+
+				nombre1.setCustomValidity("Debe incluir un nombre");
+
+				nombre1.style.background = "#FFDDDD";
+				nombre2.style.background = "#FFDDDD";
+
+
+			} else {
+				nombre1.setCustomValidity("");
+				nombre1.style.background = "#FFFFFF";
+				nombre2.style.background = "#FFFFFF";
+
+			}
+		}
+		window.addEventListener("load", iniciar);
+	</script>
+
+</head>
+
+<body>
+	<form id="contact" action="https://formsubmit.co/tomobre@gmail.com" method="POST">
+		<label for="ConNombre">Nombre:</label>
+		<input name="nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" id="ConNombre" type="text">
+		<label for="ConApellido">Apellido:</label>
+		<input name="apellido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" id="ConApellido" type="text">
+		<label for="ConMail">Correo electronico:</label>
+		<input name="email" id="ConMail" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+			type="email">
+		<label for="ConAsunto">Asunto:</label>
+		<input name="asunto" id="ConAsunto" pattern="^.{1,20}$" required type="text">
+		<label for="ConMensaje">Mensaje:</label>
+		<input name="mensaje" id="ConMensaje" cols="500" rows="500" required type="textarea" pattern="^.{1,50}$">
+		<input type="hidden" name="_next" value="./contacto-hecho.html">
+
+		<br>
+		<br>
+		<input id="submit" type="submit"></input>
+		<div class="LinkedInsta">
+			<a href="https://www.instagram.com/tomobre/" target="_blank">
+				<img id="Instagram" src="./—Pngtree—instagram logo icon_3588821.png" />
+			</a>
+			<a href="https://www.linkedin.com/in/tomobre/" target="_blank">
+				<img id="Linkedin" src="./—Pngtree—linkedin social media icon_3609691.png" />
+			</a>
+		</div>
+	</form>
+
+
+
+
+
+
+</body>
+
+</html>
